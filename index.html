@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>17. Yüzyıl Islahatları</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <img class="topbar-image" src="assets/banner.png" alt="">
+        <div class="topbar-content">
+          <div>
+            <p class="eyebrow">Osmanlı Devleti</p>
+            <h1>17. Yüzyıl Islahatları</h1>
+          </div>
+          <div class="scoreboard" aria-live="polite">
+            <span id="placedCount">0</span>
+            <span class="muted">/</span>
+            <span id="totalCount">0</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="control-band" aria-label="Kart kontrol alanı">
+        <div class="draw-area">
+          <div id="currentCardSlot" class="current-card-slot">
+            <p class="empty-state">Kart bekliyor</p>
+          </div>
+        </div>
+        <div id="choiceBar" class="choice-bar" aria-label="Padişah seçimleri"></div>
+        <div class="actions">
+          <button id="drawButton" class="primary-button" type="button">Yeni ıslahat</button>
+          <button id="finishButton" class="secondary-button" type="button" disabled>Bitti</button>
+          <button id="resetButton" class="ghost-button" type="button">Sıfırla</button>
+        </div>
+        <p id="statusText" class="status-text" aria-live="polite"></p>
+      </section>
+
+      <section id="columns" class="columns" aria-label="Padişah sütunları"></section>
+
+      <section id="resultsPanel" class="results-panel" aria-live="polite" hidden></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
