@@ -1,43 +1,28 @@
 const SULTANS = [
-  { id: "ahmet3", key: "1", name: "III. Ahmet", color: "#0f766e" },
-  { id: "mahmut1", key: "2", name: "I. Mahmut", color: "#34549a" },
-  { id: "mustafa3", key: "3", name: "III. Mustafa", color: "#b86f19" },
-  { id: "abdulhamit1", key: "4", name: "I. Abdülhamit", color: "#b4233a" },
-  { id: "selim3", key: "5", name: "III. Selim", color: "#177245" },
+  { id: "tarhuncu", key: "1", name: "Tarhuncu Ahmet Paşa", color: "#0f766e" },
+  { id: "genc-osman", key: "2", name: "Genç Osman", color: "#34549a" },
+  { id: "kuyucu", key: "3", name: "Kuyucu Murat Paşa", color: "#b86f19" },
+  { id: "murat4", key: "4", name: "IV. Murat", color: "#b4233a" },
+  { id: "ahmet1", key: "5", name: "I. Ahmet", color: "#177245" },
+  { id: "koprululer", key: "6", name: "Köprülüler Dönemi", color: "#6f3f94" },
 ];
 
 const REFORMS = [
-  { id: 1, sultan: "ahmet3", text: "Lale Devri 1718 Pasarofça Antlaşması ile başlamış, 1730 Patrona Halil İsyanı ile sona ermiştir." },
-  { id: 2, sultan: "ahmet3", text: "Bu devrin sadrazamı Nevşehirli Damat İbrahim Paşa’dır." },
-  { id: 3, sultan: "ahmet3", text: "Minyatürcüsü Levni, şairi Nedim’dir." },
-  { id: 4, sultan: "ahmet3", text: "Islahatlarda Avrupa ilk kez örnek alınmıştır." },
-  { id: 5, sultan: "ahmet3", text: "Lale Devri’nde askerî ıslahat yapılmamıştır." },
-  { id: 6, sultan: "ahmet3", text: "İbrahim Müteferrika ve Sait Efendi tarafından matbaa getirilmiştir." },
-  { id: 7, sultan: "ahmet3", text: "Sait Efendi Avrupa’da “Türkoveri” akımını başlatmıştır." },
-  { id: 8, sultan: "ahmet3", text: "İlk defa geçici elçilikler Paris, Moskova, Viyana ve Varşova’da açılmıştır." },
-  { id: 9, sultan: "ahmet3", text: "28 Mehmet Çelebi, Paris Sefaretnamesi’ni yazmıştır." },
-  { id: 10, sultan: "ahmet3", text: "İran’dan çiçek aşısı getirilmiştir." },
-  { id: 11, sultan: "ahmet3", text: "Gerçek Davut Ağa’nın katkılarıyla Tulumbacılar Ocağı (İtfaiye) kurulmuştur." },
-  { id: 12, sultan: "mahmut1", text: "Ülke içinde kütüphaneler açtırmış ve el yazması eserleri toplatmıştır." },
-  { id: 13, sultan: "mahmut1", text: "İlk defa Batı tarzı askerî ıslahatlar yapmıştır." },
-  { id: 14, sultan: "mahmut1", text: "İlk defa Batı’dan bir uzman getirmiştir. Bu uzman Comte de Bonneval’dir." },
-  { id: 15, sultan: "mahmut1", text: "Batı tarzında ilk teknik okul olan Hendesehane açılmıştır." },
-  { id: 16, sultan: "mustafa3", text: "Avrupa’dan Baron de Tott’u getirmiştir." },
-  { id: 17, sultan: "mustafa3", text: "Cezayirli Gazi Hasan Paşa tarafından 1773 yılında Tersane Hendesehanesi açılmıştır." },
-  { id: 18, sultan: "mustafa3", text: "Esham sistemi uygulamasını getirmiştir." },
-  { id: 19, sultan: "abdulhamit1", text: "III. Mustafa Dönemi’nde Osmanlı ülkesine gelen Baron de Tott ıslahat çalışmalarına devam etmiştir." },
-  { id: 20, sultan: "abdulhamit1", text: "1775’te Mühendishane-i Bahri Hümayun açılmıştır." },
-  { id: 21, sultan: "selim3", text: "Yaptığı tüm ıslahatlara Nizam-ı Cedit adı verilmiştir." },
-  { id: 22, sultan: "selim3", text: "Islahatlarında Fransa’yı örnek almıştır." },
-  { id: 23, sultan: "selim3", text: "Radikal (sıradışı) yönde ıslahatlar yapan ilk Osmanlı padişahıdır." },
-  { id: 24, sultan: "selim3", text: "Dönemi Kabakçı Mustafa İsyanı ile sona ermiştir." },
-  { id: 25, sultan: "selim3", text: "İlk kalıcı elçilik açılmıştır." },
-  { id: 26, sultan: "selim3", text: "Bilim insanlarından “Lahiya” (rapor) istemiştir." },
-  { id: 27, sultan: "selim3", text: "Mühendishane-i Berri (Kara) Hümayun açılmıştır." },
-  { id: 28, sultan: "selim3", text: "Fransızca, sadece askerî okullarda zorunlu ilk yabancı resmî dil ilan edilmiştir." },
-  { id: 29, sultan: "selim3", text: "Nizam-ı Cedit adıyla yeni bir ordu kurulmuştur." },
-  { id: 30, sultan: "selim3", text: "İrad-ı Cedit hazinesi kurulmuştur." },
-  { id: 31, sultan: "selim3", text: "Nizam-ı Cedidin ilk ve son başarısı Fransa’ya karşı Akka Kalesi’ni savunmasıdır." },
+  { id: 1, sultan: "tarhuncu", text: "“Tarhuncu Bütçesi” adında modern ve denk bütçe hazırlamıştır." },
+  { id: 2, sultan: "tarhuncu", text: "İsrafı önleyip maliyeyi düzeltmiştir." },
+  { id: 3, sultan: "genc-osman", text: "Osmanlı tarihinde ilk ıslahat yapan padişahtır." },
+  { id: 4, sultan: "genc-osman", text: "Yeniçeri Ocağını kaldırmayı ve başkenti İstanbul’dan Anadolu’ya taşımayı düşünmüştür." },
+  { id: 5, sultan: "genc-osman", text: "Çıkar çevreleri ve yeniçeriler tarafından Yedikule zindanlarında idam edilmiştir." },
+  { id: 6, sultan: "kuyucu", text: "Celâli İsyanlarını şiddetle bastırmıştır." },
+  { id: 7, sultan: "murat4", text: "Lakabı Bağdat Fatihi’dir. Saray kadınlarını devlet yönetiminden uzaklaştırmıştır." },
+  { id: 8, sultan: "murat4", text: "İlk defa gece sokağa çıkma yasağı, içki ve tütün yasağı getirmiştir." },
+  { id: 9, sultan: "murat4", text: "Kanuni Sultan Süleyman zamanında açılan kahveleri ve meyhaneleri kapatmıştır." },
+  { id: 10, sultan: "murat4", text: "Yasakların temel sebebi İstanbul’da ortaya çıkan yangınların önüne geçmektir." },
+  { id: 11, sultan: "murat4", text: "IV. Murat döneminde Evliya Çelebi, Kâtip Çelebi, Nefi, Şeyhülislam Yahya, Veysi, Koçi Bey ve Azmizade Haleti gibi önemli şahsiyetler yaşamıştır." },
+  { id: 12, sultan: "ahmet1", text: "Ekber ve Erşed Sistemi’ni getirmiştir." },
+  { id: 13, sultan: "ahmet1", text: "III. Mehmet sancağa çıkma uygulamasını kaldırmıştır." },
+  { id: 14, sultan: "koprululer", text: "Köprülü Mehmet Paşa, saraya şartlar öne sürerek sadrazam olmuştur." },
+  { id: 15, sultan: "koprululer", text: "Merzifonlu Kara Mustafa Paşa, II. Viyana Kuşatması’ndaki başarısızlığından dolayı idam edilmiştir." },
 ];
 
 const state = {
@@ -378,7 +363,7 @@ function resetRound() {
 }
 
 function handleKeyboardAssign(event) {
-  if (!["1", "2", "3", "4", "5"].includes(event.key)) {
+  if (!["1", "2", "3", "4", "5", "6"].includes(event.key)) {
     return;
   }
 
